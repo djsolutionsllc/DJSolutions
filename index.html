@@ -1,204 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DJ Solutions LLC | Simple Websites for Colorado Businesses</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
-        
-        body { font-family: 'Inter', system-ui, sans-serif; }
-        .heading-font { font-family: 'Space Grotesk', sans-serif; }
-
-        .hero-bg {
-            background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(15, 23, 42, 0.85)), 
-                        url('https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?q=80&w=2070');
-            background-size: cover;
-            background-position: center;
-        }
-
-        .portfolio-img {
-            height: 240px;
-            object-fit: contain;
-            background: #18181b;
-            padding: 20px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DJ Solutions LLC | Small software tools that do one job well</title>
+<meta name="description" content="DJ Solutions LLC is a small Colorado software studio. We build focused tools: DueDove, SlipKiln and Tidyfold.">
+<style>
+:root{--bg:#0b0d12;--card:#141821;--line:#232a36;--txt:#e6e9ef;--mut:#9aa3b2;--acc:#6ea8fe;--ok:#3ecf8e}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--txt)}
+a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header{border-bottom:1px solid var(--line)}header .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+.logo{font-weight:700;color:var(--txt);letter-spacing:.2px}nav a{margin-left:20px;color:var(--mut)}
+.hero{padding:88px 0 56px}.hero h1{font-size:clamp(32px,5vw,48px);line-height:1.15;margin:0 0 16px}
+.hero p{color:var(--mut);font-size:19px;max-width:640px;margin:0}
+h2{font-size:26px;margin:0 0 8px}.sub{color:var(--mut);margin:0 0 28px}
+section{padding:40px 0}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px;display:flex;flex-direction:column}
+.card h3{margin:0 0 4px;font-size:22px}.tag{display:inline-block;font-size:12px;padding:2px 10px;border-radius:99px;background:#1d2a22;color:var(--ok);margin-bottom:12px}
+.card p{color:var(--mut);margin:0 0 14px}.card ul{margin:0 0 18px;padding-left:18px;color:var(--mut)}.card .go{margin-top:auto;font-weight:600}
+.tools{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.tool{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}.tool b{display:block;color:var(--txt)}.tool span{color:var(--mut);font-size:14px}
+footer{border-top:1px solid var(--line);margin-top:40px;padding:28px 0;color:var(--mut);font-size:14px}
+</style>
 </head>
-<body class="bg-zinc-950 text-zinc-200">
+<body>
+<header><div class="wrap"><span class="logo">DJ Solutions LLC</span><nav><a href="#products">Products</a><a href="#tidyfold">Tidyfold</a><a href="#contact">Contact</a></nav></div></header>
+<main>
+<section class="hero"><div class="wrap">
+<h1>Small software tools that each do one job well.</h1>
+<p>DJ Solutions LLC is a small Colorado software studio. We build and run focused products for businesses that bill customers and work with documents and data.</p>
+</div></section>
 
-    <!-- NAVBAR -->
-    <nav class="bg-zinc-900 border-b border-zinc-800 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <img src="https://i.ibb.co/bR6T7sXD/image-5.png" 
-                     alt="DJ Solutions LLC" 
-                     class="h-20 w-auto">
-            </div>
-            
-            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
-                <a href="#" class="hover:text-blue-400 transition">Home</a>
-                <a href="#services" class="hover:text-blue-400 transition">Services</a>
-                <a href="#portfolio" class="hover:text-blue-400 transition">Portfolio</a>
-                <a href="#about" class="hover:text-blue-400 transition">About</a>
-                <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
-            </div>
+<section id="products"><div class="wrap">
+<h2>Products</h2><p class="sub">What we've built and run so far.</p>
+<div class="grid">
+<div class="card"><h3>DueDove</h3><span class="tag">Live · on the Stripe App Marketplace</span>
+<p>Automatic, polite reminders for overdue invoices, so you get paid without chasing customers by hand.</p>
+<ul><li>Works with Stripe and Xero (QuickBooks Online awaiting Intuit review)</li><li>$59/month</li></ul>
+<a class="go" href="https://duedove.com">duedove.com →</a>
+<a class="go" href="https://marketplace.stripe.com/apps/duedove" style="margin-top:6px">Stripe App Marketplace listing →</a></div>
+<div class="card"><h3>SlipKiln</h3><span class="tag">Live</span>
+<p>An API that turns HTML or JSON into PDFs, with ready-made templates such as invoices.</p>
+<ul><li>Free for 50 documents a month</li><li>Paid plans from $9/month, plus a small per-document charge above the plan</li></ul>
+<a class="go" href="https://slipkiln.com">slipkiln.com →</a></div>
+<div class="card"><h3>Tidyfold</h3><span class="tag">Live · 8 tools on the Apify Store</span>
+<p>Pay-per-use data tools: PDF conversion and extraction, plus business and provider lookups.</p>
+<ul><li>Runs on Apify; pay only for what you use</li></ul>
+<a class="go" href="https://apify.com/tidyfold">Tidyfold on Apify →</a></div>
+</div></div></section>
 
-            <a href="#contact" class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-2xl font-semibold text-sm transition-all">
-                Get in Touch
-            </a>
-        </div>
-    </nav>
+<section id="tidyfold"><div class="wrap">
+<h2>Tidyfold tools</h2><p class="sub">All public on the Apify Store.</p>
+<div class="tools">
+<a class="tool" href="https://apify.com/tidyfold/web-to-pdf"><b>Web to PDF</b><span>Save web pages as PDFs</span></a>
+<a class="tool" href="https://apify.com/tidyfold/pdf-tables-to-csv"><b>PDF Tables to CSV</b><span>Pull tables out of PDFs</span></a>
+<a class="tool" href="https://apify.com/tidyfold/invoice-pdf-to-json"><b>Invoice PDF to JSON</b><span>Turn invoices into structured data</span></a>
+<a class="tool" href="https://apify.com/tidyfold/pdf-text-ocr"><b>PDF Text &amp; OCR</b><span>Extract text, including from scans</span></a>
+<a class="tool" href="https://apify.com/tidyfold/npi-provider-lookup"><b>NPI Provider Lookup</b><span>Look up US healthcare providers</span></a>
+<a class="tool" href="https://apify.com/tidyfold/trade-license-lookup"><b>Trade License Lookup</b><span>Check contractor licenses</span></a>
+<a class="tool" href="https://apify.com/tidyfold/new-business-filings"><b>New Business Filings</b><span>Find newly registered businesses</span></a>
+<a class="tool" href="https://apify.com/tidyfold/website-contact-finder"><b>Website Contact Finder</b><span>Find contact details on websites</span></a>
+</div></div></section>
 
-    <!-- HERO -->
-    <header class="hero-bg h-screen flex items-center text-white">
-        <div class="max-w-5xl mx-auto px-6 text-center">
-            <h1 class="heading-font text-6xl md:text-7xl font-bold tracking-tighter leading-none mb-6">
-                Simple websites.<br>
-                <span class="text-sky-300">Built for local Colorado businesses.</span>
-            </h1>
-            <p class="text-xl md:text-2xl text-zinc-100 max-w-2xl mx-auto mb-10">
-                Clean, fast, and professional websites that clearly show off your work and make it easy for customers to find your contact information.
-            </p>
-            
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#contact" class="bg-white text-zinc-900 hover:bg-zinc-100 px-10 py-4 rounded-3xl font-semibold text-lg inline-flex items-center justify-center gap-3 transition-all">
-                    <i class="fa-solid fa-rocket"></i>
-                    Start Your Simple Website
-                </a>
-                <a href="#portfolio" class="border border-white/70 hover:bg-white/10 px-10 py-4 rounded-3xl font-semibold text-lg inline-flex items-center justify-center gap-3 transition-all">
-                    See Examples
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <!-- SERVICES -->
-    <section id="services" class="py-24 bg-zinc-950">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <span class="px-4 py-2 bg-blue-900 text-blue-300 rounded-full text-sm font-medium">What We Offer</span>
-                <h2 class="heading-font text-5xl font-semibold tracking-tighter mt-4">Simple. Transparent. Predictable.</h2>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-10 hover:border-blue-600 transition-all">
-                    <div class="w-14 h-14 bg-blue-900 rounded-2xl flex items-center justify-center text-3xl mb-8">🌐</div>
-                    <h3 class="text-2xl font-semibold mb-3">Simple Website Creation</h3>
-                    <p class="text-zinc-400 leading-relaxed">One-time build fee for a clean, professional website.</p>
-                </div>
-
-                <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-10 hover:border-blue-600 transition-all">
-                    <div class="w-14 h-14 bg-emerald-900 rounded-2xl flex items-center justify-center text-3xl mb-8">🔄</div>
-                    <h3 class="text-2xl font-semibold mb-3">Monthly Care Plan</h3>
-                    <p class="text-zinc-400 leading-relaxed"><strong>$50 per month</strong> — domain, hosting, SSL & limited updates.</p>
-                </div>
-
-                <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-10 hover:border-blue-600 transition-all">
-                    <div class="w-14 h-14 bg-amber-900 rounded-2xl flex items-center justify-center text-3xl mb-8">⚡</div>
-                    <h3 class="text-2xl font-semibold mb-3">Fast Delivery</h3>
-                    <p class="text-zinc-400 leading-relaxed">Most websites completed in 3–7 days.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PORTFOLIO -->
-    <section id="portfolio" class="py-24 bg-zinc-900 relative">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-12">
-                <h2 class="heading-font text-5xl font-semibold tracking-tighter">Recent Websites</h2>
-            </div>
-            
-            <div class="relative">
-                <button id="scrollLeft" class="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-black/70 hover:bg-black/90 text-white p-4 rounded-full transition-all">
-                    <i class="fa-solid fa-chevron-left text-2xl"></i>
-                </button>
-
-                <div id="portfolioScroll" class="flex gap-6 overflow-x-auto pb-8 snap-x snap-mandatory scroll-smooth">
-                    <div class="group bg-zinc-800 rounded-3xl overflow-hidden min-w-[340px] flex-shrink-0 snap-start flex flex-col">
-                        <a href="https://www.johnsontileandremodel.com/" target="_blank">
-                            <img src="https://i.ibb.co/KdyvLvP/JTR-LOGO-cropped.jpg" 
-                                 alt="Johnson Tile & Remodel" 
-                                 class="portfolio-img w-full">
-                        </a>
-                        <div class="p-8 text-center">
-                            <h4 class="font-semibold">Johnson Tile & Remodel</h4>
-                            <p class="text-sm text-zinc-400">Tile Installation & Remodeling</p>
-                        </div>
-                    </div>
-                </div>
-
-                <button id="scrollRight" class="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-black/70 hover:bg-black/90 text-white p-4 rounded-full transition-all">
-                    <i class="fa-solid fa-chevron-right text-2xl"></i>
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="py-24 bg-zinc-950">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="text-center mb-12">
-                <span class="px-4 py-2 bg-blue-900 text-blue-300 rounded-full text-sm font-medium">Our Approach</span>
-                <h2 class="heading-font text-5xl font-semibold tracking-tighter mt-4">We keep things simple</h2>
-            </div>
-            <div class="max-w-3xl mx-auto text-center text-lg text-zinc-400">
-                <p>
-                    I build straightforward, good-looking websites for local Colorado businesses. 
-                    One-time build fee + a simple $50/month plan that covers your domain, hosting, SSL, and limited monthly updates.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="py-24 bg-zinc-900">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="heading-font text-5xl font-semibold tracking-tighter mb-6">Ready to get started?</h2>
-            <p class="text-xl text-zinc-400 mb-12 max-w-xl mx-auto">
-                Reach out and we’ll schedule a quick conversation to understand what you need. 
-                We’ll discuss your goals first, then provide a clear one-time build price + our $50/month plan.
-            </p>
-            
-            <a href="mailto:info@djsolutionsllc.net" 
-               class="inline-flex items-center gap-4 bg-blue-600 hover:bg-blue-500 text-white px-12 py-7 rounded-3xl text-2xl font-semibold transition-all mb-10">
-                <i class="fa-solid fa-envelope text-3xl"></i>
-                Email Us Now
-            </a>
-
-            <div class="flex justify-center gap-12 text-sm">
-                <div class="flex items-center gap-3">
-                    <i class="fa-solid fa-phone text-blue-400"></i>
-                    <div>
-                        <div class="font-medium">(720) 310-8628</div>
-                        <div class="text-zinc-500">Call or text anytime</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="bg-black text-zinc-500 py-12">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            © 2026 DJ Solutions LLC • Simple Websites for Colorado Businesses
-        </div>
-    </footer>
-
-    <script>
-        // Smooth scrolling for navbar links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                if (this.getAttribute('href') !== '#') {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-    </script>
+<section id="contact"><div class="wrap">
+<h2>Contact</h2><p class="sub">Questions about any product: <a href="mailto:hello@duedove.com">hello@duedove.com</a></p>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 DJ Solutions LLC · 9169 W State St #3935, Garden City, ID 83714</div></footer>
+<script>(function(){try{if(navigator.webdriver||location.protocol==="file:")return;var r="-";if(document.referrer){var h=new URL(document.referrer).hostname;if(h&&h!==location.hostname)r=h}new Image().src="https://app.duedove.com/v/djsolutions/"+encodeURIComponent(r)+location.pathname}catch(e){}})();</script>
 </body>
 </html>
